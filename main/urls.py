@@ -6,6 +6,8 @@ urlpatterns = [
 
 
 
-    path('', vs.index, name='index')
+    path('', vs.index, name='index'),
+    path('create/', vs.create_note, name='create'),
+    path('note_page/<str:serial_id>/', vs.note_page, name='note-page'),
 
 ]
