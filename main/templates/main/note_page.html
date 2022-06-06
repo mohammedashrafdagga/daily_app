@@ -1,12 +1,14 @@
 {% extends "base.html" %}
 
 <!-- title block  -->
-{% block title %} Hello {% endblock title %}
+{% block title %} NotePage {% endblock title %}
 
 <!-- content block -->
 {% block content %}
 <!-- for loop -->
-{% include "main/view_note.html" %}
+{% include "components/note_page_component.html" %}
 <!-- end loop -->
+{% include "main/view_note.html" %}
+
 <!-- end content -->
 {% endblock content %}
